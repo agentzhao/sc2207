@@ -1,0 +1,7 @@
+BCNF if and only if the LHS of every non-trivial FD contains a key of R
+3NF for every non-trivial FD either the LHS contains a key of R or each attribute in RHS is contained in a key of R
+
+lossless - original table can be reconstructed from decomposed
+dependency-preserving - all FD from original table preserved in decomposed
+
+The common attribute in R1 and R2 is B. Since B is a key of R1, the decomposition is lossless. B → D is preserved in R1; AB → C is preserved in R2. DE → A is not preserved in both decomposed tables. Hence, the decomposition is not dependency-preserving
